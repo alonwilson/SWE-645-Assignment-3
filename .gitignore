@@ -1,0 +1,5 @@
+.venv
+.vscode
+json
+.surveys.db
+output.txt

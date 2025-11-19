@@ -1,0 +1,151 @@
+/* Global Styles */
+body {
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  background-color: #f7f8fa;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Page headings */
+h2 {
+  text-align: center;
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th {
+  background-color: #4e73df;
+  color: white;
+  text-align: left;
+  padding: 12px;
+  font-weight: 500;
+}
+
+td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+tr:hover {
+  background-color: #f9fafc;
+}
+
+button {
+  background-color: #4e73df;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  margin-right: 5px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #2e59d9;
+}
+
+button:last-child {
+  background-color: #e74a3b;
+}
+
+button:last-child:hover {
+  background-color: #c0392b;
+}
+
+/* Form styling */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0 16px 0;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+form input[type="checkbox"],
+form input[type="radio"] {
+  width: auto;
+  margin-right: 6px;
+}
+
+form label {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 12px;
+  font-size: 0.9rem;
+}
+
+form p {
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+form button[type="submit"] {
+  background-color: #1cc88a;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+form button[type="submit"]:hover {
+  background-color: #17a673;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  tr {
+    margin-bottom: 1rem;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  }
+
+  td {
+    border: none;
+    padding: 8px 0;
+  }
+
+  th {
+    display: none;
+  }
+
+  td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    display: block;
+    color: #555;
+  }
+}

@@ -1,0 +1,6 @@
+fastapi
+uvicorn[standard]
+sqlmodel>=0.0.22
+pydantic>=2
+pymysql
+python-dotenv

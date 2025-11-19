@@ -1,0 +1,228 @@
+/* ==============================
+   Global & Body
+============================== */
+body {
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  background-color: #f7f8fa;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+/* ==============================
+   Navbar
+============================== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #006633;
+  color: white;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.nav-links a {
+  color: #FFCC33;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: white;
+}
+
+/* ==============================
+   Table (SurveyList)
+============================== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th {
+  background-color: #006633;
+  color: #ffffff;
+  text-align: left;
+  padding: 12px;
+  font-weight: 500;
+}
+
+td {
+
+  border-bottom: 1px solid #e5e7eb;
+}
+
+tr:hover {
+  background-color: #f9fafc;
+}
+
+/* ==============================
+   Buttons
+============================== */
+button {
+  border: none;
+  padding: 6px 12px;
+  margin-right: 5px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+  color: white;
+}
+
+button {
+  background-color: #006633;
+}
+
+button:hover {
+  background-color: #004d26;
+}
+
+
+/* ==============================
+   Form (SurveyForm)
+============================== */
+form {
+  max-width: 650px;
+  margin: 2rem auto;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0 16px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+form input[type="checkbox"],
+form input[type="radio"] {
+  width: auto;
+  margin-right: 6px;
+}
+
+form label {
+  align-items: center;
+  margin-right: 12px;
+  font-size: 17px;
+}
+
+form p {
+  margin-top: 10px;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+form button[type="submit"] {
+  background-color: #006633;
+  color: #FFCC33;
+  padding: 12px 20px;
+  border-radius: 8px;
+  width: 100%;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+form button[type="submit"]:hover {
+  background-color: #004d26;
+  color: white;
+}
+
+/* ==============================
+   Headings & Layout
+============================== */
+h2 {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+/* ==============================
+   Responsive
+============================== */
+@media (max-width: 768px) {
+  .nav-links a {
+    margin-left: 1rem;
+  }
+
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  tr {
+    margin-bottom: 1rem;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  }
+
+  td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    color: #006633;
+    display: block;
+  }
+
+  th {
+    display: none;
+  }
+}
+
+/* ==============================
+   Action buttons column
+============================== */
+
+td.action-buttons {
+  background-color: transparent;  /* blend in with background */
+  text-align: left;
+}
+
+td.action-buttons button {
+  background: none;
+  border: none;
+  padding: 4px 6px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+  display: inline-flex;
+  align-items: left;
+  justify-content: left;
+}
+
+/* Pencil icon (edit) */
+td.action-buttons button.edit svg {
+  color: #FFCC33;
+}
+
+td.action-buttons button.edit:hover {
+  background-color: #e6f2e6; /* light green tint */
+}
+
+/* Trash icon (delete) */
+td.action-buttons button.delete svg {
+  color: #ff0000;
+}
+
+td.action-buttons button.delete:hover {
+  background-color: #fff7e0; /* light gold tint */
+}
