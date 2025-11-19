@@ -8,7 +8,7 @@ function App() {
   return (
     <div>
       <nav className="navbar">
-        <h1 className="nav-title">Campus Survey</h1>
+        <h1 className="nav-title">Campus Survey test #1</h1>
         <div className="nav-links">
           <Link to="/">Surveys</Link>
           <Link to="/add">Add Survey</Link>
