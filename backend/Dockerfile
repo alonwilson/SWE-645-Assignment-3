@@ -1,3 +1,5 @@
+# Author: Alon Wilson
+
 # Use a python image
 FROM python:3.12.2
 

@@ -1,3 +1,5 @@
+// Author: Alon Wilson
+
 import React, { useState, useEffect } from 'react'
 import { getSurveys, deleteSurvey } from '../services/surveyService'
 import { useNavigate } from 'react-router-dom'

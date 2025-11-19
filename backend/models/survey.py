@@ -1,3 +1,5 @@
+# Author: Alon Wilson
+
 from datetime import date
 from typing import Optional
 from sqlmodel import SQLModel, Field
